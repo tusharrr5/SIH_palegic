@@ -1,0 +1,59 @@
+{
+  "scene_id": "S1A_IW_GRDH_1SDV_20170129T003132_20170129T003157_015039_01892E",
+  "product_id": "1d00379c-fe75-4e44-a90d-d354a59e0104",
+  "product_name": "S1A_IW_GRDH_1SDV_20170129T003132_20170129T003157_015039_01892E_8B05_COG.SAFE",
+  "platform": "Sentinel-1A",
+  "instrument": "C-SAR (C-band Synthetic Aperture Radar)",
+  "product_type": "GRD",
+  "product_level": "Level-1",
+  "acquisition_time": "2017-01-29T00:31:32Z",
+  "acquisition_start": "2017-01-29T00:31:32.651000Z",
+  "acquisition_end": "2017-01-29T00:31:57.648000Z",
+  "acquisition_time_note": "Verified from CDSE catalogue search. Acquired ~16.5h after collision (first post-spill daylight overpass).",
+  "polarisation": "VV+VH",
+  "orbit_direction": "ASCENDING",
+  "relative_orbit_number": 85,
+  "swath": "IW (Interferometric Wide)",
+  "resolution_m": 10,
+  "bounding_box": {
+    "type": "Polygon",
+    "coordinates": [[
+      [78.219948, 11.888502],
+      [80.810555, 11.888502],
+      [80.810555, 13.841207],
+      [78.219948, 13.841207],
+      [78.219948, 11.888502]
+    ]],
+    "_note": "Axis-aligned bounding box enclosing scene footprint and Ennore coastal waters."
+  },
+  "footprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [80.499916, 11.888502],
+        [78.219948, 12.333139],
+        [78.516136, 13.841207],
+        [80.810555, 13.400343],
+        [80.499916, 11.888502]
+      ]
+    ]
+  },
+  "source": "Copernicus Data Space Ecosystem (CDSE) — https://dataspace.copernicus.eu/",
+  "source_url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(1d00379c-fe75-4e44-a90d-d354a59e0104)",
+  "source_type": "satellite_observation",
+  "provenance_class": "OBSERVED",
+  "processing_level": "Level-1 GRD (Ground Range Detected)",
+  "selection_rationale": "Scientifically optimal scene because: (1) Acquired 2017-01-29T00:31:32Z (~16.5h post-incident), capturing surface oil drift prior to major containment and coastal dispersal; (2) Footprint directly contains the collision site (13.28°N, 80.33°E) and coastal waters, unlike frame 00:31:07Z which terminates at 13.40°N; (3) IW GRDH 10m resolution with VV co-polarization channel provides the standard physical mechanism for oil film capillary wave dampening detection; (4) Cloud-Optimized GeoTIFF format enables efficient targeted retrieval.",
+  "processing_steps": [
+    "CDSE OData catalogue discovery and geometric verification",
+    "Footprint intersection validation with incident point (13.28°N, 80.33°E)"
+  ],
+  "detection_method": "historical_validation_mask",
+  "detection_method_note": "The oil-slick polygon used in this prototype was digitised from published maps and incident reports. No automated ML detection model has been applied to the SAR image in this prototype version. Label: ILLUSTRATIVE mask aligned to published reports.",
+  "data_status": "METADATA_ONLY — actual SAR raster not yet downloaded",
+  "download_instructions": "Run scripts/fetch_sentinel1_ennore.py to download from CDSE (requires free CDSE credentials in CDSE_USERNAME / CDSE_PASSWORD).",
+  "is_synthetic": false,
+  "is_raster_loaded": false,
+  "citation_or_dataset_identifier": "ESA Sentinel-1 Mission; DOI: 10.5270/S1-mivxgba",
+  "notes": "Raster state is METADATA_ONLY. If downloaded, status changes to DOWNLOADED. Slick polygon remains ILLUSTRATIVE until a genuine detection algorithm is executed."
+}

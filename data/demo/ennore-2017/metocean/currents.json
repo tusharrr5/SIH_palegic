@@ -1,0 +1,48 @@
+{
+  "incident_id": "SIH-ENNORE-2017",
+  "data_status": "NOT_LOADED",
+  "status_message": "Historical environmental forcing not loaded — copernicusmarine package not installed. Run: pip install copernicusmarine",
+  "dataset": "CMEMS GLOBAL-REANALYSIS-PHY-001-030",
+  "provider": "Copernicus Marine Service (CMEMS)",
+  "dataset_url": "https://resources.marine.copernicus.eu/product-detail/GLOBAL_REANALYSIS_PHY_001_030",
+  "variable_u": "uo — Sea water eastward velocity",
+  "variable_v": "vo — Sea water northward velocity",
+  "depth_level": "surface (0 m)",
+  "temporal_resolution": "daily_mean",
+  "spatial_resolution_deg": 0.083,
+  "units": "m/s",
+  "provenance_class": "REANALYSIS",
+  "is_synthetic": false,
+  "source_type": "reanalysis_product",
+  "time_window": [
+    "2017-01-27T00:00:00Z",
+    "2017-01-31T00:00:00Z"
+  ],
+  "spatial_extent": {
+    "lat_min": 12.5,
+    "lat_max": 14.0,
+    "lon_min": 79.5,
+    "lon_max": 81.0
+  },
+  "citation_or_dataset_identifier": "E.U. Copernicus Marine Service Information (CMEMS). Global Ocean Physics Reanalysis. CMEMS-GLO-PHY-001-030. DOI: 10.48670/moi-00021",
+  "download_instructions": "Run: python scripts/fetch_cmems_currents.py --incident SIH-ENNORE-2017 (requires CMEMS credentials)",
+  "sample_schema": {
+    "_description": "When loaded, each sample must follow this schema",
+    "timestamp": "ISO 8601 UTC",
+    "latitude": "float, WGS84",
+    "longitude": "float, WGS84",
+    "depth_m": "float, depth in metres (0.0 to 1.0 m near-surface)",
+    "u_current_mps": "float, m/s, eastward velocity (uo)",
+    "v_current_mps": "float, m/s, northward velocity (vo)",
+    "current_speed_mps": "float, m/s, current speed magnitude",
+    "current_direction_deg": "float, degrees (oceanographic, direction towards which current flows)",
+    "units": "m/s",
+    "source": "Copernicus Marine Service (CMEMS)",
+    "dataset": "cmems_mod_glo_phy_my_0.083deg_P1D-m",
+    "retrieval_time": "ISO 8601 UTC",
+    "provenance_class": "REANALYSIS",
+    "data_status": "LOADED"
+  },
+  "samples": [],
+  "notes": "Do NOT substitute fictional constant current values for the Ennore case. The existing illustrative transport sandbox may keep its hardcoded values because it is labelled ILLUSTRATIVE. The Ennore case must use REANALYSIS data or fail clearly."
+}

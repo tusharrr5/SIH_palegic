@@ -1,0 +1,25 @@
+{
+  "incident_id": "SIH-ENNORE-2017",
+  "wind": {
+    "dataset": "ERA5",
+    "provider": "ECMWF / Copernicus CDS",
+    "provenance_class": "REANALYSIS",
+    "is_synthetic": false,
+    "status": "NOT_LOADED",
+    "license": "Copernicus licence to use Copernicus Products",
+    "license_url": "https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
+    "citation": "Hersbach, H. et al. (2023). ERA5 hourly data on single levels. CDS. DOI: 10.24381/cds.adbb2d47"
+  },
+  "currents": {
+    "dataset": "CMEMS GLOBAL-REANALYSIS-PHY-001-030",
+    "provider": "Copernicus Marine Service",
+    "provenance_class": "REANALYSIS",
+    "is_synthetic": false,
+    "status": "NOT_LOADED",
+    "license": "Copernicus Marine Service Information",
+    "license_url": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+    "citation": "CMEMS GLO-PHY-001-030. DOI: 10.48670/moi-00021"
+  },
+  "fallback_policy": "NONE — do not silently substitute fictional constants. Display 'Historical environmental forcing not loaded' if either dataset is absent.",
+  "notes": "The existing analytics.py particle_backtrack function uses hardcoded wind/current constants. Those constants are labelled ILLUSTRATIVE and are acceptable for the training sandbox. They must NOT be used for the SIH-ENNORE-2017 canonical case without real data."
+}

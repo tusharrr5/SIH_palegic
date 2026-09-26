@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ennore-slick-main",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [80.3250, 13.2600],
+              [80.3320, 13.2580],
+              [80.3380, 13.2550],
+              [80.3420, 13.2500],
+              [80.3440, 13.2450],
+              [80.3430, 13.2400],
+              [80.3390, 13.2370],
+              [80.3340, 13.2360],
+              [80.3290, 13.2380],
+              [80.3250, 13.2420],
+              [80.3230, 13.2470],
+              [80.3230, 13.2530],
+              [80.3250, 13.2600]
+            ]
+          ],
+          [
+            [
+              [80.3100, 13.1900],
+              [80.3160, 13.1870],
+              [80.3200, 13.1820],
+              [80.3210, 13.1770],
+              [80.3190, 13.1730],
+              [80.3150, 13.1710],
+              [80.3090, 13.1720],
+              [80.3060, 13.1760],
+              [80.3060, 13.1820],
+              [80.3080, 13.1870],
+              [80.3100, 13.1900]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "slick_id": "ennore-slick-main",
+        "observation_date": "2017-01-29",
+        "observation_time": "2017-01-29T04:30:00Z",
+        "source": "Digitised from published incident reports and news imagery",
+        "source_type": "digitised_from_secondary_sources",
+        "provenance_class": "ILLUSTRATIVE",
+        "detection_method": "historical_validation_mask",
+        "is_synthetic": false,
+        "is_illustrative": true,
+        "area_km2_approx": 4.2,
+        "dataset_role": "primary_spill_geometry_for_investigation",
+        "processing_method": "Manual digitisation aligned to published newspaper maps and official ITOPF/NRSC reports. No pixel-level SAR classification performed.",
+        "notes": "This polygon is an ILLUSTRATIVE reconstruction derived from secondary sources. It is NOT the output of automated SAR oil detection. Position and shape are approximate. Use for methodology demonstration only.",
+        "citation_or_dataset_identifier": "The Hindu / ITOPF Ennore 2017 incident records; NRSC satellite-imagery-derived media reports",
+        "slick_description": "Main spill zone near Ennore Port entrance and secondary drift patch to south. Fuel oil from BW Maple–Dawn Kancheepuram collision.",
+        "spatial_extent": {
+          "bbox_lon_min": 80.306,
+          "bbox_lat_min": 13.171,
+          "bbox_lon_max": 80.344,
+          "bbox_lat_max": 13.260
+        }
+      }
+    }
+  ],
+  "_package_metadata": {
+    "created": "2026-09-25",
+    "incident_id": "SIH-ENNORE-2017",
+    "provenance_class": "ILLUSTRATIVE",
+    "is_synthetic": false,
+    "data_status": "ILLUSTRATIVE — pending verified SAR-derived detection",
+    "notes": "Replace this file with an actual SAR-derived detection polygon once the Sentinel-1 scene is processed. Update detection_method accordingly."
+  }
+}

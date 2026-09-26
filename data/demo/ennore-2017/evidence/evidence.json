@@ -1,0 +1,119 @@
+{
+  "incident_id": "SIH-ENNORE-2017",
+  "evidence_version": "1.0",
+  "evidence_items": [
+    {
+      "evidence_id": "EV-001",
+      "type": "SAR_SLICK_OBSERVATION",
+      "title": "Surface oil anomaly — Sentinel-1A, 29 January 2017",
+      "source": "ESA Copernicus Sentinel-1A; detection polygon: ILLUSTRATIVE derivation from secondary sources",
+      "source_type": "satellite_observation",
+      "provenance_class": "ILLUSTRATIVE",
+      "acquisition_time": "2017-01-29T04:30:00Z",
+      "observation_time": "2017-01-29T04:30:00Z",
+      "spatial_extent": {
+        "bbox_lon_min": 80.306,
+        "bbox_lat_min": 13.171,
+        "bbox_lon_max": 80.344,
+        "bbox_lat_max": 13.260
+      },
+      "processing_method": "historical_validation_mask — manually digitised from secondary reports",
+      "dataset_role": "primary_spill_detection",
+      "is_synthetic": false,
+      "notes": "Area ~4.2 km². Detection method is illustrative. NOT the output of an ML oil detection model.",
+      "citation_or_dataset_identifier": "The Hindu; ITOPF; ESA Sentinel-1"
+    },
+    {
+      "evidence_id": "EV-002",
+      "type": "VESSEL_COLLISION_RECORD",
+      "title": "BW Maple × Dawn Kancheepuram — documented collision",
+      "source": "ITOPF incident database; Kamarajar Port Authority; Ministry of Shipping India",
+      "source_type": "official_incident_record",
+      "provenance_class": "RECORDED",
+      "acquisition_time": "2017-01-28T08:00:00Z",
+      "observation_time": "2017-01-28T08:00:00Z",
+      "spatial_extent": {
+        "point_lat": 13.2530,
+        "point_lon": 80.3350,
+        "notes": "Approximate collision coordinates from published records"
+      },
+      "processing_method": "Direct use of publicly documented coordinates",
+      "dataset_role": "incident_origin_anchor",
+      "is_synthetic": false,
+      "notes": "Spill volume: ~196 tonnes fuel oil. Affected coastline: ~35 km.",
+      "citation_or_dataset_identifier": "ITOPF; https://response.restoration.noaa.gov similar incident reference"
+    },
+    {
+      "evidence_id": "EV-003",
+      "type": "AIS_TRACK",
+      "title": "BW Maple — training AIS reconstruction",
+      "source": "PALEGIC training fixture (not recorded AIS)",
+      "source_type": "training_reconstruction",
+      "provenance_class": "TRAINING",
+      "acquisition_time": "2017-01-28T06:00:00Z",
+      "observation_time_window": ["2017-01-28T06:00:00Z", "2017-01-28T14:00:00Z"],
+      "spatial_extent": {
+        "bbox_lon_min": 80.270,
+        "bbox_lat_min": 13.220,
+        "bbox_lon_max": 80.455,
+        "bbox_lat_max": 13.266
+      },
+      "processing_method": "Illustrative track based on published collision coordinates. 30-min interval. AIS gap 08:30–11:00 UTC.",
+      "dataset_role": "candidate_vessel_primary_track",
+      "is_synthetic": true,
+      "notes": "UI must display: 'Training AIS reconstruction'. Must never be labelled 'Recorded AIS'.",
+      "citation_or_dataset_identifier": "PALEGIC-TRAINING-ENNORE-2017-v1"
+    },
+    {
+      "evidence_id": "EV-004",
+      "type": "AIS_TRACK",
+      "title": "Dawn Kancheepuram — training AIS reconstruction",
+      "source": "PALEGIC training fixture (not recorded AIS)",
+      "source_type": "training_reconstruction",
+      "provenance_class": "TRAINING",
+      "acquisition_time": "2017-01-28T05:00:00Z",
+      "observation_time_window": ["2017-01-28T05:00:00Z", "2017-01-28T14:00:00Z"],
+      "spatial_extent": {
+        "bbox_lon_min": 80.318,
+        "bbox_lat_min": 13.110,
+        "bbox_lon_max": 80.360,
+        "bbox_lat_max": 13.253
+      },
+      "processing_method": "Illustrative track approaching Ennore from south. AIS gap 08:30–11:30 UTC.",
+      "dataset_role": "candidate_vessel_secondary_track",
+      "is_synthetic": true,
+      "notes": "UI must display: 'Training AIS reconstruction'.",
+      "citation_or_dataset_identifier": "PALEGIC-TRAINING-ENNORE-2017-v1"
+    },
+    {
+      "evidence_id": "EV-005",
+      "type": "METOCEAN_WIND",
+      "title": "ERA5 10 m wind — Bay of Bengal, Jan 2017",
+      "source": "ECMWF Copernicus CDS",
+      "source_type": "reanalysis_product",
+      "provenance_class": "REANALYSIS",
+      "observation_time": "2017-01-28T00:00:00Z",
+      "data_status": "NOT_LOADED",
+      "processing_method": "Not applicable — data not yet downloaded",
+      "dataset_role": "drift_environmental_forcing",
+      "is_synthetic": false,
+      "notes": "Required for drift backtracking. Not available; application must refuse to run drift model until loaded.",
+      "citation_or_dataset_identifier": "ERA5: DOI 10.24381/cds.adbb2d47"
+    },
+    {
+      "evidence_id": "EV-006",
+      "type": "METOCEAN_CURRENT",
+      "title": "CMEMS surface current reanalysis — Bay of Bengal, Jan 2017",
+      "source": "Copernicus Marine Service GLOBAL-REANALYSIS-PHY-001-030",
+      "source_type": "reanalysis_product",
+      "provenance_class": "REANALYSIS",
+      "observation_time": "2017-01-28T00:00:00Z",
+      "data_status": "NOT_LOADED",
+      "processing_method": "Not applicable — data not yet downloaded",
+      "dataset_role": "drift_environmental_forcing",
+      "is_synthetic": false,
+      "notes": "Required for drift backtracking.",
+      "citation_or_dataset_identifier": "CMEMS GLO-PHY-001-030: DOI 10.48670/moi-00021"
+    }
+  ]
+}

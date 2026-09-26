@@ -1,0 +1,34 @@
+{
+  "slick_id": "ennore-slick-main",
+  "incident_id": "SIH-ENNORE-2017",
+  "observation_date": "2017-01-29",
+  "satellite_platform": "Sentinel-1A",
+  "product_type": "GRD",
+  "detection_method": "historical_validation_mask",
+  "detection_method_description": "Polygon digitised from secondary published sources (news reports, ITOPF records, NRSC media imagery). Not from automated SAR backscatter classification.",
+  "detection_method_note": "Polygon digitised from secondary published sources (news reports, ITOPF records, NRSC media imagery). Not from automated SAR backscatter classification.",
+  "provenance_class": "ILLUSTRATIVE",
+  "source": "Derived from publicly available incident documentation",
+  "source_type": "secondary_source_digitisation",
+  "is_synthetic": false,
+  "is_illustrative": true,
+  "area_km2_approx": 4.2,
+  "affected_coastline_km_approx": 35,
+  "spill_substance": "Fuel oil (from LPG tanker and bulk carrier)",
+  "spatial_extent": {
+    "bbox_lon_min": 80.306,
+    "bbox_lat_min": 13.171,
+    "bbox_lon_max": 80.344,
+    "bbox_lat_max": 13.260
+  },
+  "confidence": "LOW — illustrative reconstruction for methodology demonstration",
+  "citation_or_dataset_identifier": "ITOPF incident record; The Hindu (Chennai) Jan–Feb 2017 coverage; NRSC/ISRO satellite-derived media reports",
+  "acquisition_time": "2017-01-29T04:30:00Z",
+  "processing_steps": [
+    "Review of published news photographs and satellite-derived maps",
+    "Manual polygon digitisation in WGS84",
+    "Topology validation (valid MultiPolygon)"
+  ],
+  "dataset_role": "primary_spill_polygon_for_sih_demonstration",
+  "notes": "This detection metadata must be updated when an actual Sentinel-1 SAR-derived oil detection is performed. At that point detection_method should be changed to the actual classifier used (e.g. 'threshold_based_backscatter_classifier') and provenance_class changed to 'OBSERVED'."
+}

@@ -1,0 +1,192 @@
+{
+  "search_metadata": {
+    "incident_id": "SIH-ENNORE-2017",
+    "search_platform": "Copernicus Data Space Ecosystem (CDSE)",
+    "catalogue_url": "https://catalogue.dataspace.copernicus.eu",
+    "odata_endpoint": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products",
+    "search_url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?%24filter=Collection%2FName+eq+%27SENTINEL-1%27+and+ContentDate%2FStart+ge+2017-01-23T08%3A00%3A00.000Z+and+ContentDate%2FStart+le+2017-02-02T08%3A00%3A00.000Z+and+OData.CSC.Intersects%28area%3Dgeography%27SRID%3D4326%3BPOLYGON%28%2879.8+12.9%2C81.0+12.9%2C81.0+13.7%2C79.8+13.7%2C79.8+12.9%29%29%27%29+and+contains%28Name%2C+%27GRD%27%29&%24top=50&%24orderby=ContentDate%2FStart+asc",
+    "time_window_start": "2017-01-23T08:00:00+00:00",
+    "time_window_end": "2017-02-02T08:00:00+00:00",
+    "aoi_bbox": {
+      "lon_min": 79.8,
+      "lat_min": 12.9,
+      "lon_max": 81.0,
+      "lat_max": 13.7
+    },
+    "collection": "SENTINEL-1",
+    "product_type_filter": "GRD",
+    "searched_at": "2026-09-26T09:50:37.008256+00:00"
+  },
+  "scenes": [
+    {
+      "product_id": "bfdc3532-7b82-40b8-973b-03124dce8dee",
+      "product_name": "S1A_IW_GRDH_1SDV_20170129T003107_20170129T003132_015039_01892E_BE92_COG.SAFE",
+      "satellite": "Sentinel-1A",
+      "acquisition_start": "2017-01-29T00:31:07.650000Z",
+      "acquisition_end": "2017-01-29T00:31:32.649000Z",
+      "orbit": null,
+      "instrument_mode": "IW",
+      "polarisation": "VV+VH",
+      "processing_level": "Level-1 GRD",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.810577,
+              13.400434
+            ],
+            [
+              78.516151,
+              13.841296
+            ],
+            [
+              78.811607,
+              15.34923
+            ],
+            [
+              81.122208,
+              14.912052
+            ],
+            [
+              80.810577,
+              13.400434
+            ]
+          ]
+        ]
+      },
+      "source_platform": "Copernicus Data Space Ecosystem (CDSE)",
+      "download_status": "NOT_DOWNLOADED",
+      "online_status": true,
+      "content_length_bytes": 1110477052
+    },
+    {
+      "product_id": "64538607-c37d-5d94-970e-8ef0eb7579c0",
+      "product_name": "S1A_IW_GRDH_1SDV_20170129T003107_20170129T003132_015039_01892E_7843.SAFE",
+      "satellite": "Sentinel-1A",
+      "acquisition_start": "2017-01-29T00:31:07.650204Z",
+      "acquisition_end": "2017-01-29T00:31:32.649513Z",
+      "orbit": null,
+      "instrument_mode": "IW",
+      "polarisation": "VV+VH",
+      "processing_level": "Level-1 GRD",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.810577,
+              13.400434
+            ],
+            [
+              78.516151,
+              13.841296
+            ],
+            [
+              78.811607,
+              15.34923
+            ],
+            [
+              81.122208,
+              14.912052
+            ],
+            [
+              80.810577,
+              13.400434
+            ]
+          ]
+        ]
+      },
+      "source_platform": "Copernicus Data Space Ecosystem (CDSE)",
+      "download_status": "NOT_DOWNLOADED",
+      "online_status": true,
+      "content_length_bytes": 1705492160
+    },
+    {
+      "product_id": "1d00379c-fe75-4e44-a90d-d354a59e0104",
+      "product_name": "S1A_IW_GRDH_1SDV_20170129T003132_20170129T003157_015039_01892E_8B05_COG.SAFE",
+      "satellite": "Sentinel-1A",
+      "acquisition_start": "2017-01-29T00:31:32.651000Z",
+      "acquisition_end": "2017-01-29T00:31:57.648000Z",
+      "orbit": null,
+      "instrument_mode": "IW",
+      "polarisation": "VV+VH",
+      "processing_level": "Level-1 GRD",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.499916,
+              11.888502
+            ],
+            [
+              78.219948,
+              12.333139
+            ],
+            [
+              78.516136,
+              13.841207
+            ],
+            [
+              80.810555,
+              13.400343
+            ],
+            [
+              80.499916,
+              11.888502
+            ]
+          ]
+        ]
+      },
+      "source_platform": "Copernicus Data Space Ecosystem (CDSE)",
+      "download_status": "NOT_DOWNLOADED",
+      "online_status": true,
+      "content_length_bytes": 1183518636
+    },
+    {
+      "product_id": "7ac9b7e4-30df-5408-8275-bf0ff1f137ef",
+      "product_name": "S1A_IW_GRDH_1SDV_20170129T003132_20170129T003157_015039_01892E_6D04.SAFE",
+      "satellite": "Sentinel-1A",
+      "acquisition_start": "2017-01-29T00:31:32.651003Z",
+      "acquisition_end": "2017-01-29T00:31:57.648821Z",
+      "orbit": null,
+      "instrument_mode": "IW",
+      "polarisation": "VV+VH",
+      "processing_level": "Level-1 GRD",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.499916,
+              11.888502
+            ],
+            [
+              78.219948,
+              12.333139
+            ],
+            [
+              78.516136,
+              13.841207
+            ],
+            [
+              80.810555,
+              13.400343
+            ],
+            [
+              80.499916,
+              11.888502
+            ]
+          ]
+        ]
+      },
+      "source_platform": "Copernicus Data Space Ecosystem (CDSE)",
+      "download_status": "NOT_DOWNLOADED",
+      "online_status": true,
+      "content_length_bytes": 1705422275
+    }
+  ],
+  "search_status": "SCENES_FOUND",
+  "notes": "4 Sentinel-1 GRD scene(s) found covering the Ennore incident area within the search window."
+}

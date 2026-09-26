@@ -1,0 +1,43 @@
+{
+  "incident_id": "SIH-ENNORE-2017",
+  "name": "Ennore Oil Spill — Historical Validation Investigation",
+  "incident_type": "marine_oil_spill",
+  "latitude": 13.2800,
+  "longitude": 80.3300,
+  "incident_start": "2017-01-28T08:00:00Z",
+  "satellite_observation_time": "2017-01-29T04:30:00Z",
+  "region": "Bay of Bengal — Ennore / Chennai coast",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "nearest_port": "Ennore Port (Kamarajar Port), Chennai",
+  "investigation_mode": "historical_validation",
+  "status": "closed",
+  "sih_problem_id": "26143",
+  "description": "On 28 January 2017, BW Maple and Dawn Kancheepuram collided near Ennore Port, Tamil Nadu, releasing fuel oil that reached approximately 35 km of Chennai coastline. This case is used as a HISTORICAL VALIDATION incident to demonstrate the PALEGIC investigation workflow using publicly documented facts and illustrative/training data. No live or classified data are used.",
+  "public_sources": [
+    "https://www.thehindu.com/news/national/tamil-nadu/ennore-oil-spill-a-disaster-caused-by-vessels-bw-maple-and-dawn-kancheepuram/article17752024.ece",
+    "https://maritime.org.in/news/ennore-oil-spill-2017",
+    "https://www.itopf.org/knowledge-resources/data-statistics/statistics/"
+  ],
+  "known_spill_volume_tonnes_approx": 196,
+  "affected_coastline_km_approx": 35,
+  "vessels_involved": [
+    {
+      "name": "BW Maple",
+      "type": "LPG tanker",
+      "flag": "Singapore",
+      "imo": 9346537,
+      "role_in_incident": "collision_party",
+      "source": "publicly_documented"
+    },
+    {
+      "name": "Dawn Kancheepuram",
+      "type": "bulk carrier",
+      "flag": "India",
+      "imo": 9368730,
+      "role_in_incident": "collision_party",
+      "source": "publicly_documented"
+    }
+  ],
+  "provenance_note": "All facts in this file are sourced from published news reports and maritime incident databases. This prototype does not possess primary evidence; the investigation serves only as a methodology demonstration."
+}

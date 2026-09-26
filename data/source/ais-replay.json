@@ -1,0 +1,906 @@
+[
+  {
+    "id": "recorded-dma-265410000",
+    "name": "STENA JUTLANDICA",
+    "synthetic": false,
+    "points": [
+      {
+        "time": "2017-07-05T08:48:31+00:00",
+        "lon": 11.80496,
+        "lat": 57.676528,
+        "sog": 17.6,
+        "cog": 55.3,
+        "source_fid": 25795
+      },
+      {
+        "time": "2017-07-05T08:49:32+00:00",
+        "lon": 11.813167,
+        "lat": 57.678547,
+        "sog": 17.5,
+        "cog": 72.2,
+        "source_fid": 25880
+      },
+      {
+        "time": "2017-07-05T08:50:33+00:00",
+        "lon": 11.822212,
+        "lat": 57.679835,
+        "sog": 17.4,
+        "cog": 75.5,
+        "source_fid": 25941
+      },
+      {
+        "time": "2017-07-05T08:51:40+00:00",
+        "lon": 11.83157,
+        "lat": 57.681147,
+        "sog": 16.6,
+        "cog": 75.3,
+        "source_fid": 26007
+      },
+      {
+        "time": "2017-07-05T08:52:46+00:00",
+        "lon": 11.83942,
+        "lat": 57.682225,
+        "sog": 12.2,
+        "cog": 75.2,
+        "source_fid": 26060
+      },
+      {
+        "time": "2017-07-05T08:53:46+00:00",
+        "lon": 11.844588,
+        "lat": 57.68298,
+        "sog": 9.2,
+        "cog": 74.9,
+        "source_fid": 26147
+      },
+      {
+        "time": "2017-07-05T08:54:46+00:00",
+        "lon": 11.848785,
+        "lat": 57.68356,
+        "sog": 7.8,
+        "cog": 75.5,
+        "source_fid": 26238
+      },
+      {
+        "time": "2017-07-05T08:55:46+00:00",
+        "lon": 11.852562,
+        "lat": 57.684083,
+        "sog": 7.5,
+        "cog": 75.5,
+        "source_fid": 26345
+      },
+      {
+        "time": "2017-07-05T08:56:52+00:00",
+        "lon": 11.857005,
+        "lat": 57.684655,
+        "sog": 8.3,
+        "cog": 76.8,
+        "source_fid": 26473
+      },
+      {
+        "time": "2017-07-05T08:57:52+00:00",
+        "lon": 11.861295,
+        "lat": 57.68517,
+        "sog": 8.6,
+        "cog": 77.8,
+        "source_fid": 26603
+      },
+      {
+        "time": "2017-07-05T08:58:52+00:00",
+        "lon": 11.865697,
+        "lat": 57.685663,
+        "sog": 8.7,
+        "cog": 78.4,
+        "source_fid": 26725
+      },
+      {
+        "time": "2017-07-05T09:00:02+00:00",
+        "lon": 11.870897,
+        "lat": 57.686193,
+        "sog": 8.7,
+        "cog": 79.7,
+        "source_fid": 26840
+      },
+      {
+        "time": "2017-07-05T09:01:02+00:00",
+        "lon": 11.875362,
+        "lat": 57.68661,
+        "sog": 8.6,
+        "cog": 80.1,
+        "source_fid": 26946
+      },
+      {
+        "time": "2017-07-05T09:02:21+00:00",
+        "lon": 11.881057,
+        "lat": 57.687178,
+        "sog": 8.3,
+        "cog": 78.2,
+        "source_fid": 27094
+      },
+      {
+        "time": "2017-07-05T09:03:25+00:00",
+        "lon": 11.88549,
+        "lat": 57.687702,
+        "sog": 8.1,
+        "cog": 76.4,
+        "source_fid": 27201
+      },
+      {
+        "time": "2017-07-05T09:04:31+00:00",
+        "lon": 11.889997,
+        "lat": 57.688352,
+        "sog": 8.0,
+        "cog": 73.9,
+        "source_fid": 27319
+      },
+      {
+        "time": "2017-07-05T09:05:31+00:00",
+        "lon": 11.89402,
+        "lat": 57.688997,
+        "sog": 8.1,
+        "cog": 72.9,
+        "source_fid": 27414
+      },
+      {
+        "time": "2017-07-05T09:06:31+00:00",
+        "lon": 11.897893,
+        "lat": 57.689832,
+        "sog": 8.0,
+        "cog": 64.6,
+        "source_fid": 27527
+      },
+      {
+        "time": "2017-07-05T09:07:31+00:00",
+        "lon": 11.901428,
+        "lat": 57.690945,
+        "sog": 7.9,
+        "cog": 55.5,
+        "source_fid": 27633
+      },
+      {
+        "time": "2017-07-05T09:08:38+00:00",
+        "lon": 11.904885,
+        "lat": 57.692503,
+        "sog": 7.8,
+        "cog": 45.6,
+        "source_fid": 27746
+      },
+      {
+        "time": "2017-07-05T09:09:41+00:00",
+        "lon": 11.907858,
+        "lat": 57.694137,
+        "sog": 7.9,
+        "cog": 43.1,
+        "source_fid": 27852
+      },
+      {
+        "time": "2017-07-05T09:10:51+00:00",
+        "lon": 11.911298,
+        "lat": 57.695932,
+        "sog": 7.8,
+        "cog": 49.0,
+        "source_fid": 27968
+      },
+      {
+        "time": "2017-07-05T10:29:41+00:00",
+        "lon": 11.91232,
+        "lat": 57.696473,
+        "sog": 8.4,
+        "cog": 227.1,
+        "source_fid": 34590
+      },
+      {
+        "time": "2017-07-05T10:30:41+00:00",
+        "lon": 11.909195,
+        "lat": 57.694832,
+        "sog": 8.4,
+        "cog": 224.0,
+        "source_fid": 34710
+      },
+      {
+        "time": "2017-07-05T10:31:41+00:00",
+        "lon": 11.906142,
+        "lat": 57.693125,
+        "sog": 8.5,
+        "cog": 222.9,
+        "source_fid": 34834
+      },
+      {
+        "time": "2017-07-05T10:32:41+00:00",
+        "lon": 11.902963,
+        "lat": 57.691523,
+        "sog": 8.3,
+        "cog": 231.8,
+        "source_fid": 34959
+      },
+      {
+        "time": "2017-07-05T10:33:41+00:00",
+        "lon": 11.899205,
+        "lat": 57.69043,
+        "sog": 8.4,
+        "cog": 244.8,
+        "source_fid": 35096
+      },
+      {
+        "time": "2017-07-05T10:34:41+00:00",
+        "lon": 11.895128,
+        "lat": 57.689532,
+        "sog": 8.5,
+        "cog": 249.4,
+        "source_fid": 35221
+      },
+      {
+        "time": "2017-07-05T10:35:41+00:00",
+        "lon": 11.891238,
+        "lat": 57.688758,
+        "sog": 7.6,
+        "cog": 250.1,
+        "source_fid": 35335
+      },
+      {
+        "time": "2017-07-05T10:36:41+00:00",
+        "lon": 11.88756,
+        "lat": 57.688195,
+        "sog": 7.2,
+        "cog": 256.9,
+        "source_fid": 35464
+      },
+      {
+        "time": "2017-07-05T10:37:41+00:00",
+        "lon": 11.883792,
+        "lat": 57.68778,
+        "sog": 7.6,
+        "cog": 258.7,
+        "source_fid": 35583
+      },
+      {
+        "time": "2017-07-05T10:38:41+00:00",
+        "lon": 11.879782,
+        "lat": 57.68737,
+        "sog": 8.0,
+        "cog": 259.5,
+        "source_fid": 35706
+      },
+      {
+        "time": "2017-07-05T10:39:41+00:00",
+        "lon": 11.875643,
+        "lat": 57.687023,
+        "sog": 8.3,
+        "cog": 261.2,
+        "source_fid": 35857
+      },
+      {
+        "time": "2017-07-05T10:40:41+00:00",
+        "lon": 11.871342,
+        "lat": 57.686667,
+        "sog": 8.4,
+        "cog": 261.2,
+        "source_fid": 35988
+      },
+      {
+        "time": "2017-07-05T10:41:41+00:00",
+        "lon": 11.867017,
+        "lat": 57.686302,
+        "sog": 8.4,
+        "cog": 261.0,
+        "source_fid": 36115
+      },
+      {
+        "time": "2017-07-05T10:42:41+00:00",
+        "lon": 11.862653,
+        "lat": 57.68592,
+        "sog": 8.5,
+        "cog": 260.9,
+        "source_fid": 36265
+      },
+      {
+        "time": "2017-07-05T10:43:41+00:00",
+        "lon": 11.858253,
+        "lat": 57.685547,
+        "sog": 8.6,
+        "cog": 260.7,
+        "source_fid": 36406
+      },
+      {
+        "time": "2017-07-05T10:44:41+00:00",
+        "lon": 11.853828,
+        "lat": 57.68517,
+        "sog": 8.6,
+        "cog": 260.6,
+        "source_fid": 36542
+      },
+      {
+        "time": "2017-07-05T10:45:41+00:00",
+        "lon": 11.849382,
+        "lat": 57.684738,
+        "sog": 8.9,
+        "cog": 259.7,
+        "source_fid": 36670
+      },
+      {
+        "time": "2017-07-05T10:46:41+00:00",
+        "lon": 11.844003,
+        "lat": 57.684147,
+        "sog": 11.6,
+        "cog": 257.8,
+        "source_fid": 36817
+      },
+      {
+        "time": "2017-07-05T10:47:42+00:00",
+        "lon": 11.837322,
+        "lat": 57.683352,
+        "sog": 13.4,
+        "cog": 257.1,
+        "source_fid": 36966
+      },
+      {
+        "time": "2017-07-05T10:48:42+00:00",
+        "lon": 11.830232,
+        "lat": 57.682472,
+        "sog": 14.4,
+        "cog": 256.2,
+        "source_fid": 37117
+      },
+      {
+        "time": "2017-07-05T10:49:45+00:00",
+        "lon": 11.82222,
+        "lat": 57.681422,
+        "sog": 15.6,
+        "cog": 256.7,
+        "source_fid": 37258
+      },
+      {
+        "time": "2017-07-05T10:50:45+00:00",
+        "lon": 11.814067,
+        "lat": 57.68045,
+        "sog": 16.3,
+        "cog": 259.1,
+        "source_fid": 37393
+      },
+      {
+        "time": "2017-07-05T10:51:45+00:00",
+        "lon": 11.805563,
+        "lat": 57.67994,
+        "sog": 16.7,
+        "cog": 264.5,
+        "source_fid": 37539
+      },
+      {
+        "time": "2017-07-05T10:51:51+00:00",
+        "lon": 11.804702,
+        "lat": 57.679897,
+        "sog": 16.7,
+        "cog": 264.7,
+        "source_fid": 37549
+      }
+    ],
+    "provenance": {
+      "kind": "recorded_archive",
+      "provider": "Danish Maritime Authority via MovingPandas",
+      "description": "Recorded vessel traffic near Gothenburg on 5 July 2017. No association with an oil release is claimed.",
+      "mmsi": "265410000",
+      "region": "Gothenburg approaches, Sweden",
+      "ship_type": "Passenger",
+      "url": "https://github.com/movingpandas/movingpandas-examples/blob/main/data/README.md",
+      "license": "DMA historical open data; DMA data management policy applies. Mirror repository: BSD-3-Clause.",
+      "license_url": "https://www.dma.dk/safety-at-sea/navigational-information/ais-data/ais-data-management-policy-",
+      "original_file": "ais-gothenburg-2017.gpkg",
+      "source_sha256": "038c98af738e29cdac5d91a1829eb88a4b7cf94fedbf6f6cf8e04982bd65e4e3",
+      "source_window": "2017-07-05 08:00:00\u201311:00:00",
+      "source_report_count": 439,
+      "time_basis": "Source clock strings interpreted as UTC; the GeoPackage has no timezone metadata.",
+      "transformation": "Fixed passage window; last fid per timestamp; retain first then reports >=60 s apart plus final report. Original coordinates and report times retained; AIS unavailable SOG/COG codes become null."
+    }
+  },
+  {
+    "id": "recorded-dma-219455000",
+    "name": "MAGNOLIA SEAWAYS",
+    "synthetic": false,
+    "points": [
+      {
+        "time": "2017-07-05T18:00:15+00:00",
+        "lon": 11.821277,
+        "lat": 57.691155,
+        "sog": 0.0,
+        "cog": 0.0,
+        "source_fid": 70117
+      },
+      {
+        "time": "2017-07-05T18:01:15+00:00",
+        "lon": 11.821277,
+        "lat": 57.691155,
+        "sog": 0.0,
+        "cog": 0.0,
+        "source_fid": 70185
+      },
+      {
+        "time": "2017-07-05T18:02:15+00:00",
+        "lon": 11.821277,
+        "lat": 57.691155,
+        "sog": 0.0,
+        "cog": 0.0,
+        "source_fid": 70251
+      },
+      {
+        "time": "2017-07-05T18:03:15+00:00",
+        "lon": 11.821277,
+        "lat": 57.691155,
+        "sog": 0.0,
+        "cog": 0.0,
+        "source_fid": 70331
+      },
+      {
+        "time": "2017-07-05T18:04:15+00:00",
+        "lon": 11.821277,
+        "lat": 57.691155,
+        "sog": 0.0,
+        "cog": 0.0,
+        "source_fid": 70402
+      },
+      {
+        "time": "2017-07-05T18:05:15+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 11.0,
+        "source_fid": 70460
+      },
+      {
+        "time": "2017-07-05T18:06:15+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.3,
+        "cog": 11.0,
+        "source_fid": 70525
+      },
+      {
+        "time": "2017-07-05T18:07:15+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.4,
+        "cog": 11.0,
+        "source_fid": 70584
+      },
+      {
+        "time": "2017-07-05T18:08:15+00:00",
+        "lon": 11.822917,
+        "lat": 57.691468,
+        "sog": 0.7,
+        "cog": 11.0,
+        "source_fid": 70649
+      },
+      {
+        "time": "2017-07-05T18:09:15+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 325.9,
+        "source_fid": 70707
+      },
+      {
+        "time": "2017-07-05T18:10:25+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 101.0,
+        "source_fid": 70793
+      },
+      {
+        "time": "2017-07-05T18:11:25+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 56.0,
+        "source_fid": 70879
+      },
+      {
+        "time": "2017-07-05T18:12:35+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 11.0,
+        "source_fid": 70984
+      },
+      {
+        "time": "2017-07-05T18:13:35+00:00",
+        "lon": 11.822917,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 11.0,
+        "source_fid": 71068
+      },
+      {
+        "time": "2017-07-05T18:14:35+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.0,
+        "cog": 191.0,
+        "source_fid": 71171
+      },
+      {
+        "time": "2017-07-05T18:15:45+00:00",
+        "lon": 11.822933,
+        "lat": 57.691465,
+        "sog": 0.3,
+        "cog": 191.0,
+        "source_fid": 71273
+      },
+      {
+        "time": "2017-07-05T18:16:45+00:00",
+        "lon": 11.822932,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 281.0,
+        "source_fid": 71388
+      },
+      {
+        "time": "2017-07-05T18:17:45+00:00",
+        "lon": 11.822932,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 324.9,
+        "source_fid": 71477
+      },
+      {
+        "time": "2017-07-05T18:18:45+00:00",
+        "lon": 11.822932,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 307.5,
+        "source_fid": 71573
+      },
+      {
+        "time": "2017-07-05T18:19:45+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 307.5,
+        "source_fid": 71647
+      },
+      {
+        "time": "2017-07-05T18:20:45+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 307.5,
+        "source_fid": 71739
+      },
+      {
+        "time": "2017-07-05T18:21:45+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 306.5,
+        "source_fid": 71816
+      },
+      {
+        "time": "2017-07-05T18:22:46+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 307.5,
+        "source_fid": 71893
+      },
+      {
+        "time": "2017-07-05T18:25:30+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.3,
+        "cog": 299.4,
+        "source_fid": 72095
+      },
+      {
+        "time": "2017-07-05T18:31:33+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.2,
+        "cog": 100.0,
+        "source_fid": 72435
+      },
+      {
+        "time": "2017-07-05T18:34:31+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 100.0,
+        "source_fid": 72590
+      },
+      {
+        "time": "2017-07-05T18:37:35+00:00",
+        "lon": 11.822933,
+        "lat": 57.691467,
+        "sog": 0.1,
+        "cog": 101.0,
+        "source_fid": 72759
+      },
+      {
+        "time": "2017-07-05T18:40:37+00:00",
+        "lon": 11.822765,
+        "lat": 57.69116,
+        "sog": 2.1,
+        "cog": 189.0,
+        "source_fid": 72940
+      },
+      {
+        "time": "2017-07-05T18:41:39+00:00",
+        "lon": 11.822703,
+        "lat": 57.690138,
+        "sog": 4.3,
+        "cog": 172.0,
+        "source_fid": 73007
+      },
+      {
+        "time": "2017-07-05T18:42:39+00:00",
+        "lon": 11.823445,
+        "lat": 57.688803,
+        "sog": 5.7,
+        "cog": 154.9,
+        "source_fid": 73089
+      },
+      {
+        "time": "2017-07-05T18:43:39+00:00",
+        "lon": 11.824912,
+        "lat": 57.68715,
+        "sog": 7.0,
+        "cog": 158.2,
+        "source_fid": 73143
+      },
+      {
+        "time": "2017-07-05T18:44:39+00:00",
+        "lon": 11.825783,
+        "lat": 57.68518,
+        "sog": 7.7,
+        "cog": 178.9,
+        "source_fid": 73198
+      },
+      {
+        "time": "2017-07-05T18:45:39+00:00",
+        "lon": 11.824698,
+        "lat": 57.682965,
+        "sog": 8.3,
+        "cog": 208.5,
+        "source_fid": 73258
+      },
+      {
+        "time": "2017-07-05T18:46:39+00:00",
+        "lon": 11.821602,
+        "lat": 57.681152,
+        "sog": 9.6,
+        "cog": 229.7,
+        "source_fid": 73321
+      },
+      {
+        "time": "2017-07-05T18:47:39+00:00",
+        "lon": 11.817042,
+        "lat": 57.679655,
+        "sog": 11.2,
+        "cog": 244.0,
+        "source_fid": 73379
+      },
+      {
+        "time": "2017-07-05T18:48:39+00:00",
+        "lon": 11.81142,
+        "lat": 57.678255,
+        "sog": 12.5,
+        "cog": 245.4,
+        "source_fid": 73440
+      },
+      {
+        "time": "2017-07-05T18:49:39+00:00",
+        "lon": 11.805472,
+        "lat": 57.676753,
+        "sog": 13.3,
+        "cog": 242.5,
+        "source_fid": 73493
+      }
+    ],
+    "provenance": {
+      "kind": "recorded_archive",
+      "provider": "Danish Maritime Authority via MovingPandas",
+      "description": "Recorded vessel traffic near Gothenburg on 5 July 2017. No association with an oil release is claimed.",
+      "mmsi": "219455000",
+      "region": "Gothenburg approaches, Sweden",
+      "ship_type": "Cargo",
+      "url": "https://github.com/movingpandas/movingpandas-examples/blob/main/data/README.md",
+      "license": "DMA historical open data; DMA data management policy applies. Mirror repository: BSD-3-Clause.",
+      "license_url": "https://www.dma.dk/safety-at-sea/navigational-information/ais-data/ais-data-management-policy-",
+      "original_file": "ais-gothenburg-2017.gpkg",
+      "source_sha256": "038c98af738e29cdac5d91a1829eb88a4b7cf94fedbf6f6cf8e04982bd65e4e3",
+      "source_window": "2017-07-05 18:00:00\u201319:00:00",
+      "source_report_count": 204,
+      "time_basis": "Source clock strings interpreted as UTC; the GeoPackage has no timezone metadata.",
+      "transformation": "Fixed passage window; last fid per timestamp; retain first then reports >=60 s apart plus final report. Original coordinates and report times retained; AIS unavailable SOG/COG codes become null."
+    }
+  },
+  {
+    "id": "recorded-dma-219632000",
+    "name": "MARIT MAERSK",
+    "synthetic": false,
+    "points": [
+      {
+        "time": "2017-07-05T16:01:11+00:00",
+        "lon": 11.859583,
+        "lat": 57.688167,
+        "sog": 0.0,
+        "cog": 277.5,
+        "source_fid": 61849
+      },
+      {
+        "time": "2017-07-05T16:04:48+00:00",
+        "lon": 11.859583,
+        "lat": 57.688167,
+        "sog": 0.0,
+        "cog": 195.4,
+        "source_fid": 62087
+      },
+      {
+        "time": "2017-07-05T16:07:11+00:00",
+        "lon": 11.859583,
+        "lat": 57.688167,
+        "sog": 0.0,
+        "cog": 195.4,
+        "source_fid": 62258
+      },
+      {
+        "time": "2017-07-05T16:13:12+00:00",
+        "lon": 11.859583,
+        "lat": 57.688167,
+        "sog": 0.0,
+        "cog": 251.5,
+        "source_fid": 62767
+      },
+      {
+        "time": "2017-07-05T16:16:46+00:00",
+        "lon": 11.85895,
+        "lat": 57.687917,
+        "sog": 0.4,
+        "cog": 218.2,
+        "source_fid": 63122
+      },
+      {
+        "time": "2017-07-05T16:19:11+00:00",
+        "lon": 11.85895,
+        "lat": 57.687917,
+        "sog": 0.4,
+        "cog": 218.2,
+        "source_fid": 63331
+      },
+      {
+        "time": "2017-07-05T16:22:47+00:00",
+        "lon": 11.8582,
+        "lat": 57.687367,
+        "sog": 0.5,
+        "cog": 221.9,
+        "source_fid": 63555
+      },
+      {
+        "time": "2017-07-05T16:25:12+00:00",
+        "lon": 11.8582,
+        "lat": 57.687367,
+        "sog": 0.5,
+        "cog": 221.9,
+        "source_fid": 63718
+      },
+      {
+        "time": "2017-07-05T16:28:48+00:00",
+        "lon": 11.856717,
+        "lat": 57.686533,
+        "sog": 1.4,
+        "cog": 249.2,
+        "source_fid": 63957
+      },
+      {
+        "time": "2017-07-05T16:30:36+00:00",
+        "lon": 11.8546,
+        "lat": 57.686133,
+        "sog": 3.5,
+        "cog": 249.7,
+        "source_fid": 64098
+      },
+      {
+        "time": "2017-07-05T16:31:36+00:00",
+        "lon": 11.852683,
+        "lat": 57.68575,
+        "sog": 4.4,
+        "cog": 248.4,
+        "source_fid": 64188
+      },
+      {
+        "time": "2017-07-05T16:32:36+00:00",
+        "lon": 11.850333,
+        "lat": 57.685233,
+        "sog": 5.3,
+        "cog": 247.5,
+        "source_fid": 64305
+      },
+      {
+        "time": "2017-07-05T16:33:36+00:00",
+        "lon": 11.8476,
+        "lat": 57.684617,
+        "sog": 6.2,
+        "cog": 247.4,
+        "source_fid": 64414
+      },
+      {
+        "time": "2017-07-05T16:34:36+00:00",
+        "lon": 11.844283,
+        "lat": 57.6839,
+        "sog": 7.6,
+        "cog": 248.3,
+        "source_fid": 64514
+      },
+      {
+        "time": "2017-07-05T16:35:36+00:00",
+        "lon": 11.840233,
+        "lat": 57.6831,
+        "sog": 9.1,
+        "cog": 252.1,
+        "source_fid": 64597
+      },
+      {
+        "time": "2017-07-05T16:36:46+00:00",
+        "lon": 11.83445,
+        "lat": 57.682283,
+        "sog": 10.6,
+        "cog": 257.5,
+        "source_fid": 64677
+      },
+      {
+        "time": "2017-07-05T16:37:46+00:00",
+        "lon": 11.828817,
+        "lat": 57.681667,
+        "sog": 11.5,
+        "cog": 259.2,
+        "source_fid": 64743
+      },
+      {
+        "time": "2017-07-05T16:38:55+00:00",
+        "lon": 11.8217,
+        "lat": 57.680933,
+        "sog": 12.4,
+        "cog": 259.1,
+        "source_fid": 64822
+      },
+      {
+        "time": "2017-07-05T16:39:55+00:00",
+        "lon": 11.815283,
+        "lat": 57.680333,
+        "sog": 12.8,
+        "cog": 261.6,
+        "source_fid": 64889
+      },
+      {
+        "time": "2017-07-05T16:40:55+00:00",
+        "lon": 11.80865,
+        "lat": 57.6799,
+        "sog": 13.0,
+        "cog": 264.4,
+        "source_fid": 64967
+      },
+      {
+        "time": "2017-07-05T16:41:25+00:00",
+        "lon": 11.805267,
+        "lat": 57.679733,
+        "sog": 13.1,
+        "cog": 265.3,
+        "source_fid": 65003
+      }
+    ],
+    "provenance": {
+      "kind": "recorded_archive",
+      "provider": "Danish Maritime Authority via MovingPandas",
+      "description": "Recorded vessel traffic near Gothenburg on 5 July 2017. No association with an oil release is claimed.",
+      "mmsi": "219632000",
+      "region": "Gothenburg approaches, Sweden",
+      "ship_type": "Cargo",
+      "url": "https://github.com/movingpandas/movingpandas-examples/blob/main/data/README.md",
+      "license": "DMA historical open data; DMA data management policy applies. Mirror repository: BSD-3-Clause.",
+      "license_url": "https://www.dma.dk/safety-at-sea/navigational-information/ais-data/ais-data-management-policy-",
+      "original_file": "ais-gothenburg-2017.gpkg",
+      "source_sha256": "038c98af738e29cdac5d91a1829eb88a4b7cf94fedbf6f6cf8e04982bd65e4e3",
+      "source_window": "2017-07-05 16:00:00\u201317:00:00",
+      "source_report_count": 82,
+      "time_basis": "Source clock strings interpreted as UTC; the GeoPackage has no timezone metadata.",
+      "transformation": "Fixed passage window; last fid per timestamp; retain first then reports >=60 s apart plus final report. Original coordinates and report times retained; AIS unavailable SOG/COG codes become null."
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "file": "dwh-2010-05-17.geojson",
+    "url": "https://services1.arcgis.com/qr14biwnHA6Vis6l/arcgis/rest/services/Deepwaterhorizon_Oilspill_WM/FeatureServer/3/query?where=1%3D1&outFields=%2A&outSR=4326&f=geojson&resultRecordCount=2000",
+    "sha256": "bec91f7cc1ac5bc9ce7d4c43c2830088d51f6c1558b243669984d066fd191263",
+    "bytes": 30273,
+    "retrieved_at": "2026-09-21T11:19:20.603346+00:00",
+    "feature_count": 11
+  },
+  {
+    "file": "dwh-2010-05-19.geojson",
+    "url": "https://services1.arcgis.com/qr14biwnHA6Vis6l/arcgis/rest/services/Deepwaterhorizon_Oilspill_WM/FeatureServer/4/query?where=1%3D1&outFields=%2A&outSR=4326&f=geojson&resultRecordCount=2000",
+    "sha256": "ca8d60c1e9a3ab51d3b804b02807a984c119ea4fc8dcbbae4905787bf8d60dc4",
+    "bytes": 48711,
+    "retrieved_at": "2026-09-21T11:19:22.105124+00:00",
+    "feature_count": 46
+  },
+  {
+    "file": "dwh-2010-05-20.geojson",
+    "url": "https://services1.arcgis.com/qr14biwnHA6Vis6l/arcgis/rest/services/Deepwaterhorizon_Oilspill_WM/FeatureServer/5/query?where=1%3D1&outFields=%2A&outSR=4326&f=geojson&resultRecordCount=2000",
+    "sha256": "e8469cfa10571df10b32f770a8f353057e6a6d5c2ea3ccb1c02f47f9dc7ff540",
+    "bytes": 325174,
+    "retrieved_at": "2026-09-21T11:19:21.794984+00:00",
+    "feature_count": 259
+  },
+  {
+    "file": "dwh-metadata.json",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/afafd2255f9d43bd8a5531de7e98c9a5?f=json",
+    "sha256": "713d4800ab1b4a1c4b58e032c25d17f4832f3c359b704e3d7582d13638fd0d9c",
+    "bytes": 3049,
+    "retrieved_at": "2026-09-21T11:19:19.849976+00:00",
+    "feature_count": 0
+  },
+  {
+    "file": "countries.geojson",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+    "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "bytes": 3083490,
+    "retrieved_at": "2026-09-21T11:19:20.103601+00:00",
+    "feature_count": 242
+  },
+  {
+    "file": "ais-gothenburg-2017.gpkg",
+    "url": "https://raw.githubusercontent.com/movingpandas/movingpandas-examples/main/data/ais.gpkg",
+    "sha256": "038c98af738e29cdac5d91a1829eb88a4b7cf94fedbf6f6cf8e04982bd65e4e3",
+    "bytes": 14331904,
+    "retrieved_at": "2026-09-21T21:56:56.736415+00:00",
+    "feature_count": 84702
+  },
+  {
+    "file": "movingpandas-data-README.md",
+    "url": "https://raw.githubusercontent.com/movingpandas/movingpandas-examples/main/data/README.md",
+    "sha256": "cadd75010ed05e9cbd57f4c4f848f14d8aef69f136423ec62251872a5dd3d4a4",
+    "bytes": 4084,
+    "retrieved_at": "2026-09-21T21:56:57.327816+00:00",
+    "feature_count": 0
+  },
+  {
+    "file": "movingpandas-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/movingpandas/movingpandas-examples/main/LICENSE",
+    "sha256": "39018b4606ac52496f3b79e036407637718cb256cee8d74eea7ed5e30bdaf66b",
+    "bytes": 1520,
+    "retrieved_at": "2026-09-21T21:56:57.549204+00:00",
+    "feature_count": 0
+  },
+  {
+    "file": "ais-replay.json",
+    "url": "https://github.com/movingpandas/movingpandas-examples/blob/main/data/README.md",
+    "sha256": "e91dbf17d12eef597069704c505d8f58786146290b2764dfc098021352226d38",
+    "bytes": 23183,
+    "retrieved_at": "2026-09-21T21:57:55.947567+00:00",
+    "feature_count": 104,
+    "derived_from": "ais-gothenburg-2017.gpkg"
+  },
+  {
+    "file": "land-10m.geojson",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_land.geojson",
+    "sha256": "1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416",
+    "bytes": 10157965,
+    "retrieved_at": "2026-09-21T22:08:29.478067+00:00",
+    "feature_count": 11
+  }
+]

@@ -1,0 +1,53 @@
+# Example datasets for MovingPandas examples
+
+## ais.gpkg
+
+AIS data published by the [Danish Maritime Authority](https://dma.dk/safety-at-sea/navigational-information/ais-data). This AIS sample covers vessel traffic on the 5th July 2017 near Gothenburg.
+
+## boat-positions.csv
+
+AIS data of the EverGiven incident provided by [VesselsValue](https://www.vesselsvalue.com).
+
+## geolife_sample.gpkg
+
+[GeoLife GPS Trajectories](https://www.microsoft.com/en-us/download/details.aspx?id=52367) collected in (Microsoft Research Asia) Geolife project by 182 users in a period of over three years (from April 2007 to August 2012). 
+
+Please cite the following papers when using this dataset: 
+
+* Yu Zheng, Lizhu Zhang, Xing Xie, Wei-Ying Ma. Mining interesting locations and travel sequences from GPS trajectories. In Proceedings of International conference on World Wild Web (WWW 2009), Madrid Spain. ACM Press: 791-800. 
+* Yu Zheng, Quannan Li, Yukun Chen, Xing Xie, Wei-Ying Ma. Understanding Mobility Based on GPS Data. In Proceedings of ACM conference on Ubiquitous Computing (UbiComp 2008), Seoul, Korea. ACM Press: 312-321. 
+* Yu Zheng, Xing Xie, Wei-Ying Ma, GeoLife: A Collaborative Social Networking Service among User, location and trajectory. Invited paper, in IEEE Data Engineering Bulletin. 33, 2, 2010, pp. 32-40.
+
+## gulls.gpkg
+
+Data from [True navigation in migrating gulls requires intact olfactory nerves](https://www.datarepository.movebank.org/handle/10255/move.494).
+
+When using this dataset, please cite the original article:
+
+* Wikelski M, Arriero E, Gagliardo A, Holand R, Huttunen MJ, Juvaste R, Mueller I, Tertitski G, Thorup K, Wild M, Alanko M, Bairlein F, Cherenkov A, Cameron A, Flatz R, Hannila J, Hüppop O, Kangasniemi M, Kranstauber B, Penttinen M-L, Safi K, Semashko V, Schmid H, Wistbacka R (2015) True navigation in migrating gulls requires intact olfactory nerves. Scientific Reports 5:17061. doi:10.1038/srep17061
+
+Additionally, please cite the Movebank data package: 
+
+* Wikelski M, Arriero E, Gagliardo A, Holland R, Huttunen MJ, Juvaste R, Mueller I, Tertitski G, Thorup K, Wild M, Alanko M, Bairlein F, Cherenkov A, Cameron A, Flatz R, Hannila J, Hüppop O, Kangasniemi M, Kranstauber B, Penttinen M, Safi K, Semashko V, Schmid H, Wistbacka R (2015) Data from: True navigation in migrating gulls requires intact olfactory nerves. Movebank Data Repository. doi:10.5441/001/1.q986rc29 
+
+## horse_collar.gpkg
+
+Horse collar tracking data provided by Prof. Lene Fischer (University of Copenhagen) and the Center for Technology & Environment of Guldborgsund Municipality in Denmark 
+
+## icebergs_v5.zip
+
+The consolidated [BYU/NIC iceberg database](https://www.scp.byu.edu/data/iceberg/) is described in the paper J.S. Budge and D.G. Long, "A Comprehensive Database for Antarctic Iceberg Tracking Using Scatterometer Data," IEEE Journal of Selected Topics in Applied Earth Observations, Vol. 11, No. 2, doi:10.1109/JSTARS.2017.2784186, 2017.
+
+## 2021-01-30_all.zip
+
+Data from [Delhi Pollution Dataset](http://cse.iitd.ac.in/pollutiondata/delhi), published by the Department of Computer Science and Engineering, Indian Institute of Technology Delhi.
+
+## liverpool_bus/route14_outbound.csv
+
+Real-time GPS trajectories from UK Bus Open Data Service (BODS) collected on January 26, 2026. The dataset captures a single bus (vehicle ID: 4716) operating Route 14 outbound service from Queen Square Bus Station to Petherick Road in Liverpool, operated by Arriva Merseyside.
+
+The data includes 1,533 GPS position records collected over 2-3 hours during afternoon/evening operations, demonstrating typical public transport trajectory patterns including complete trips and partial trips representing real-world data collection windows. GPS positions are recorded in WGS84 coordinate system (EPSG:4326).
+
+Fields: vehicle_id, trip_id, timestamp (UTC), latitude, longitude, bearing, origin, destination, route_name, direction, operator.
+
+Data source: [UK Bus Open Data Service](https://data.bus-data.dft.gov.uk/) - Crown copyright, available under Open Government Licence.

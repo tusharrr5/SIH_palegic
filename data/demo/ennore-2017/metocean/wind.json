@@ -1,0 +1,46 @@
+{
+  "incident_id": "SIH-ENNORE-2017",
+  "data_status": "NOT_LOADED",
+  "status_message": "Historical environmental forcing not loaded — cdsapi package not installed. Run: pip install cdsapi",
+  "dataset": "ERA5",
+  "provider": "ECMWF Copernicus Climate Data Store (CDS)",
+  "dataset_url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels",
+  "variable_u": "10m_u_component_of_wind",
+  "variable_v": "10m_v_component_of_wind",
+  "temporal_resolution": "1_hourly",
+  "spatial_resolution_deg": 0.25,
+  "units": "m/s",
+  "provenance_class": "REANALYSIS",
+  "is_synthetic": false,
+  "source_type": "reanalysis_product",
+  "time_window": [
+    "2017-01-27T00:00:00Z",
+    "2017-01-31T23:00:00Z"
+  ],
+  "spatial_extent": {
+    "lat_min": 12.5,
+    "lat_max": 14.0,
+    "lon_min": 79.5,
+    "lon_max": 81.0
+  },
+  "citation_or_dataset_identifier": "Hersbach, H., et al. (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.adbb2d47",
+  "download_instructions": "Run: python scripts/fetch_era5_wind.py --incident SIH-ENNORE-2017 (requires CDS API key in ~/.cdsapirc)",
+  "sample_schema": {
+    "_description": "When loaded, each sample in the 'samples' array must follow this schema",
+    "timestamp": "ISO 8601 UTC",
+    "latitude": "float, WGS84",
+    "longitude": "float, WGS84",
+    "u10_mps": "float, m/s, eastward component",
+    "v10_mps": "float, m/s, northward component",
+    "wind_speed_mps": "float, m/s, wind speed magnitude",
+    "wind_direction_deg": "float, degrees (meteorological, direction from which wind blows)",
+    "units": "m/s",
+    "source": "ECMWF Copernicus Climate Data Store (CDS)",
+    "dataset": "reanalysis-era5-single-levels",
+    "retrieval_time": "ISO 8601 UTC",
+    "provenance_class": "REANALYSIS",
+    "data_status": "LOADED"
+  },
+  "samples": [],
+  "notes": "Do NOT substitute fictional constant wind values for this case. If ERA5 data is not loaded the application must display: 'Historical environmental forcing not loaded' and refuse to run drift backtracking."
+}

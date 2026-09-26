@@ -1,0 +1,19 @@
+{
+  "incident_id": "SIH-ENNORE-2017",
+  "ais_data_status": "TRAINING",
+  "provenance_class": "TRAINING",
+  "is_synthetic": true,
+  "description": "No verified historical AIS for the Ennore 2017 incident has been obtained for this prototype. The tracks in tracks.json are training reconstructions: illustrative positions derived from publicly documented collision coordinates and approximate vessel approach/departure vectors. They exist to demonstrate the PALEGIC attribution workflow and must NEVER be presented as recorded AIS evidence.",
+  "ui_display_rule": "All tracks in this package must display the label 'Training AIS reconstruction' in the UI. The label 'Recorded AIS' must NOT appear for any track from this package.",
+  "swedish_ais_separation_note": "The Swedish Gothenburg 2017 recorded AIS dataset (data/source/ais-gothenburg-2017.gpkg) is a separate recorded demonstration dataset. It must NOT be used as a candidate vessel pool for the Ennore investigation.",
+  "how_to_obtain_real_ais": [
+    "MarineTraffic commercial API (historical AIS, paid tier)",
+    "VesselFinder historical data",
+    "Directorate General of Shipping (India) — AIS records under RTI",
+    "INCOIS / ISRO — coastal AIS archive"
+  ],
+  "source": "PALEGIC training fixture",
+  "citation_or_dataset_identifier": "PALEGIC-TRAINING-ENNORE-2017-v1",
+  "acquisition_time": "2026-09-25T00:00:00Z",
+  "notes": "Replace this provenance block and the tracks when verified historical AIS is obtained. Update provenance_class to RECORDED and is_synthetic to false."
+}

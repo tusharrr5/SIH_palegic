@@ -1,0 +1,40 @@
+{
+  "package_id": "ennore-2017",
+  "incident_id": "SIH-ENNORE-2017",
+  "version": "1.0",
+  "created": "2026-09-25",
+  "title": "Ennore Oil Spill — Historical Validation Investigation",
+  "description": "Canonical SIH 2026 demonstration incident. Designed to drive the PALEGIC investigation workflow without replacing or corrupting the existing datasets.",
+  "files": [
+    {"path": "incident.json", "role": "incident_identity", "status": "COMPLETE"},
+    {"path": "sar/scene_metadata.json", "role": "sar_metadata_contract", "status": "METADATA_ONLY — scene verified on CDSE"},
+    {"path": "sar/sentinel1_search_results.json", "role": "sar_cdse_search_results", "status": "COMPLETE"},
+    {"path": "sar/README.md", "role": "sar_acquisition_instructions", "status": "COMPLETE"},
+    {"path": "spill/observed_slick.geojson", "role": "primary_spill_polygon", "status": "ILLUSTRATIVE"},
+    {"path": "spill/detection_metadata.json", "role": "slick_detection_metadata", "status": "COMPLETE"},
+    {"path": "ais/tracks.json", "role": "candidate_vessel_tracks", "status": "TRAINING"},
+    {"path": "ais/provenance.json", "role": "ais_provenance", "status": "COMPLETE"},
+    {"path": "metocean/wind.json", "role": "era5_wind_contract", "status": "NOT_LOADED"},
+    {"path": "metocean/currents.json", "role": "cmems_current_contract", "status": "NOT_LOADED"},
+    {"path": "metocean/provenance.json", "role": "metocean_provenance", "status": "COMPLETE"},
+    {"path": "timeline/events.json", "role": "master_timeline", "status": "COMPLETE"},
+    {"path": "evidence/evidence.json", "role": "evidence_bundle", "status": "COMPLETE"},
+    {"path": "provenance_manifest.json", "role": "provenance_manifest", "status": "COMPLETE"},
+    {"path": "ais/HISTORICAL_AIS_RETRIEVAL.md", "role": "ais_retrieval_instructions", "status": "COMPLETE"}
+  ],
+  "data_completeness": {
+    "incident_identity": "COMPLETE",
+    "sar_raster": "NOT_LOADED",
+    "slick_polygon": "ILLUSTRATIVE",
+    "ais_tracks": "TRAINING",
+    "wind_forcing": "NOT_LOADED",
+    "current_forcing": "NOT_LOADED",
+    "timeline": "COMPLETE",
+    "evidence": "COMPLETE"
+  },
+  "demo_ready": true,
+  "demo_ready_note": "The package is sufficient for an offline SIH demonstration of the investigation workflow. The slick polygon and AIS tracks are illustrative/training data. SAR raster and metocean reanalysis are not yet loaded — the application will display appropriate 'not loaded' messages for those layers.",
+  "offline_capable": true,
+  "seed_script": "scripts/seed_ennore.py",
+  "database_case_id": "SIH-ENNORE-2017"
+}
