@@ -50,8 +50,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.api
-    ports:
-      - "8100:8100"
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-pelagic}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-maritime_oil_v2}
       ORIGIN: ${ORIGIN:-http://localhost}
@@ -79,8 +77,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.web
-    ports:
-      - "3000:3000"
     environment:
       API_URL: http://api:8100
       NODE_ENV: production
@@ -103,6 +99,7 @@ services:
     image: nginx:stable-alpine
     ports:
       - "${PORT:-80}:80"
+      - "443:443"
     volumes:
       - ./deploy/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     networks:
