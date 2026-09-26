@@ -295,17 +295,25 @@ def get_case(case_id, public=False):
 
 @app.get("/healthz")
 @app.get("/api/health")
-def health():
-    with connection() as conn:
-        conn.execute("SELECT 1")
-    return {
-        "status": "ok",
-        "version": "0.1.0",
-        "demo_dataset": "SIH-ENNORE-2017",
-        "database": "connected",
-        "mode": "cached",
-        "external_network_required": False,
-    }
+def health(response: Response):
+    try:
+        with connection() as conn:
+            conn.execute("SELECT 1")
+        return {
+            "status": "ok",
+            "version": "0.1.0",
+            "demo_dataset": "SIH-ENNORE-2017",
+            "database": "connected",
+            "mode": "cached",
+            "external_network_required": False,
+        }
+    except Exception as e:
+        response.status_code = 503
+        return {
+            "status": "database_error",
+            "detail": str(e),
+            "database_url_configured": bool(os.getenv("DATABASE_URL")),
+        }
 
 
 @app.get("/api/public/cases", response_model=list[CaseSummary])
