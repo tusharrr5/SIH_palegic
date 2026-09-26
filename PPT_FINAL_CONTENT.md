@@ -118,11 +118,11 @@
 | **Reporting** | 14-section interactive report with PDF export & JSON data download | Automated multi-agency dispatch & digital signature chain of custody |
 
 ### Live Prototype Access
-* **Live Prototype:** `https://nam-minds-guardian-seattle.trycloudflare.com/?demo=true`
-* **Demo deployment:** SIH presentation endpoint
+* **Live Prototype:** `https://web-snowy-nine-13.vercel.app/?demo=true`
+* **Demo Deployment:** SIH Presentation Production Endpoint (Permanent Cloud Deployment)
+* **Architecture:** Vercel (Next.js 15) + Render (FastAPI) + Cloud PostgreSQL / PostGIS
 * **Local Fallback:** `http://127.0.0.1:3100/?demo=true`
-* *Note: This active Cloudflare tunnel URL is live for the demonstration session. For persistent multi-day access prior to final PPT submission, refresh from CURRENT_DEMO_URL.txt if tunnel is restarted.*
-* **Credentials:** Instant Authority 1-click access via `RUN SIH DEMO`.
+* **Credentials:** Instant Authority 1-click access via `RUN SIH DEMO` (no manual sign-in required).
 
 ### Speaker Notes
 > "On Slide 6, we demonstrate our benchmark against the historic 2017 Ennore oil spill. PALEGIC successfully correlates the genuine Copernicus Sentinel-1A scene with the vessels' reconstructed tracks, identifying both collision parties and highlighting their AIS gaps. In our roadmap, we outline direct integration with India's DGLL coastal AIS network and live OpenDrift hydrodynamic modeling. You can scan the QR code right now to test the live prototype on your own devices. Thank you!"
