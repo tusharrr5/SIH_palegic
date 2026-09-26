@@ -27,7 +27,7 @@ PALEGIC utilizes a unified host deployment architecture orchestrated by Docker C
      ┌─────────▼─────────┐             ┌─────────▼─────────┐
      │  Next.js Frontend │             │  FastAPI Backend  │
      │    (Node.js 20)   │             │   (Python 3.12)   │
-     │     port 3100     │             │     port 8100     │
+     │     port 3000     │             │     port 8100     │
      └───────────────────┘             └─────────┬─────────┘
                                                  │
                                        ┌─────────▼─────────┐
