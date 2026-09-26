@@ -8,12 +8,12 @@
 ---
 
 ## 1. Files Changed
-- [main.py](file:///Users/tusharbhojwani/Downloads/Maritime-main/api/pelagic/main.py): Updated AIS-FIRST ranking payload and timeline events to use honest scientific terminology ("Suspected Surface Anomaly Identified", "Space-Time Correlation Evaluated", "Evidence Score: 76/100", and explicit non-probabilistic decision-support wording).
-- [EvidencePanel.tsx](file:///Users/tusharbhojwani/Downloads/Maritime-main/apps/web/components/EvidencePanel.tsx): Corrected Step 5 ("Suspected Surface Anomaly Evidence"), Step 6 ("Space-Time Correlation Evaluated"), and Step 8 candidate assessment card to display **Evidence Score: 76 / 100** with the explanatory note: *"Decision-support score derived from available evidence; not a probability of culpability."*
-- [ReportModal.tsx](file:///Users/tusharbhojwani/Downloads/Maritime-main/apps/web/components/ReportModal.tsx): Updated AIS-FIRST report sections 5 & 7 to remove claims of confirmed spills and present the score as Evidence Score: 76 / 100 with the required disclaimer.
-- [smoke_test_ais_first.mjs](file:///Users/tusharbhojwani/Downloads/Maritime-main/apps/web/scripts/smoke_test_ais_first.mjs): Added E2E assertions validating the Evidence Score presentation and disclaimer note.
-- [audit_browser_journeys.mjs](file:///Users/tusharbhojwani/Downloads/Maritime-main/apps/web/scripts/audit_browser_journeys.mjs): Automated dual-journey Playwright script capturing browser console logs and errors across Journey A (AIS-FIRST) and Journey B (SAR-FIRST).
-- [SIH_DEPLOYMENT_PLAN.md](file:///Users/tusharbhojwani/Downloads/Maritime-main/SIH_DEPLOYMENT_PLAN.md): Complete, production-grade deployment specification detailing recommended architecture, CORS, environment variable names, idempotent database seeds, and rollback plans.
+- [main.py](api/pelagic/main.py): Updated AIS-FIRST ranking payload and timeline events to use honest scientific terminology ("Suspected Surface Anomaly Identified", "Space-Time Correlation Evaluated", "Evidence Score: 76/100", and explicit non-probabilistic decision-support wording).
+- [EvidencePanel.tsx](apps/web/components/EvidencePanel.tsx): Corrected Step 5 ("Suspected Surface Anomaly Evidence"), Step 6 ("Space-Time Correlation Evaluated"), and Step 8 candidate assessment card to display **Evidence Score: 76 / 100** with the explanatory note: *"Decision-support score derived from available evidence; not a probability of culpability."*
+- [ReportModal.tsx](apps/web/components/ReportModal.tsx): Updated AIS-FIRST report sections 5 & 7 to remove claims of confirmed spills and present the score as Evidence Score: 76 / 100 with the required disclaimer.
+- [smoke_test_ais_first.mjs](apps/web/scripts/smoke_test_ais_first.mjs): Added E2E assertions validating the Evidence Score presentation and disclaimer note.
+- [audit_browser_journeys.mjs](apps/web/scripts/audit_browser_journeys.mjs): Automated dual-journey Playwright script capturing browser console logs and errors across Journey A (AIS-FIRST) and Journey B (SAR-FIRST).
+- [SIH_DEPLOYMENT_PLAN.md](SIH_DEPLOYMENT_PLAN.md): Complete, production-grade deployment specification detailing recommended architecture, CORS, environment variable names, idempotent database seeds, and rollback plans.
 
 ---
 
@@ -62,7 +62,7 @@ Every demo dataset retains its explicit, honest classification across UI, databa
 ---
 
 ## 6. SAR-FIRST Result
-- **Workflow Integrity**: Canonical Ennore 2017 incident ([SIH-ENNORE-2017](file:///Users/tusharbhojwani/Downloads/Maritime-main/data/demo/ennore-2017/manifest.json)).
+- **Workflow Integrity**: Canonical Ennore 2017 incident ([SIH-ENNORE-2017](data/demo/ennore-2017/manifest.json)).
 - **Progression**: Observed SAR slick detected first $\rightarrow$ collision site backtracking $\rightarrow$ multi-candidate search $\rightarrow$ candidate comparative ranking (`BW Maple` vs `Dawn Kancheepuram`).
 - **Status**: **PASS**
 
@@ -109,16 +109,16 @@ Every demo dataset retains its explicit, honest classification across UI, databa
 ---
 
 ## 11. Browser Console Result
-- Evaluated during automated execution of Journey A (AIS-FIRST) and Journey B (SAR-FIRST) in [audit_browser_journeys.mjs](file:///Users/tusharbhojwani/Downloads/Maritime-main/apps/web/scripts/audit_browser_journeys.mjs).
+- Evaluated during automated execution of Journey A (AIS-FIRST) and Journey B (SAR-FIRST) in [audit_browser_journeys.mjs](apps/web/scripts/audit_browser_journeys.mjs).
 - **Console Errors Caught**: `0` (Zero browser console errors detected).
 - **Console Warnings Caught**: `0`.
 
 ---
 
 ## 12. Deployment Readiness
-- Unified containerization stack verified in [compose.yaml](file:///Users/tusharbhojwani/Downloads/Maritime-main/compose.yaml) (PostGIS, FastAPI, Next.js 15, and Nginx reverse proxy).
-- Operations runbook documented in [SIH_PRODUCTION_RUNBOOK.md](file:///Users/tusharbhojwani/Downloads/Maritime-main/SIH_PRODUCTION_RUNBOOK.md).
-- Component-level verification documented in [DEPLOYMENT_VALIDATION.md](file:///Users/tusharbhojwani/Downloads/Maritime-main/DEPLOYMENT_VALIDATION.md).
+- Unified containerization stack verified in [compose.yaml](compose.yaml) (PostGIS, FastAPI, Next.js 15, and Nginx reverse proxy).
+- Operations runbook documented in [SIH_PRODUCTION_RUNBOOK.md](SIH_PRODUCTION_RUNBOOK.md).
+- Component-level verification documented in [DEPLOYMENT_VALIDATION.md](DEPLOYMENT_VALIDATION.md).
 - Frontend same-origin proxy eliminates cross-origin cookie and CORS issues.
 - Database bootstrap and seeding scripts are completely idempotent (`scripts/bootstrap.py` and `scripts/seed_ennore.py`).
 

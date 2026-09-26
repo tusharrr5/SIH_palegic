@@ -20,21 +20,21 @@ All automated end-to-end tests across both judge workflows (**AIS-FIRST** and **
 
 | Component / Requirement | Status | Verification Summary |
 |---|---|---|
-| **Frontend container** | **PASS** | Multi-stage Alpine container ([Dockerfile.web](file:///Users/tusharbhojwani/Downloads/Maritime-main/Dockerfile.web)) builds optimized production bundle (`next build`), runs unprivileged `nextjs` user on port 3100 with `/healthz` healthcheck. |
-| **FastAPI container** | **PASS** | Production container ([Dockerfile.api](file:///Users/tusharbhojwani/Downloads/Maritime-main/Dockerfile.api)) with GEOS, PROJ, and libpq C-libraries; runs Uvicorn ASGI server with `/api/health` healthcheck. |
-| **PostgreSQL container** | **PASS** | `postgis/postgis:17-3.5` on private internal bridge network `pelagic_net`; port 5432 is not exposed publicly; persistent Docker volume `pelagic_v2_data`. |
+| **Frontend container** | **PASS** | Multi-stage Alpine container ([Dockerfile.web](Dockerfile.web)) builds optimized production bundle (`next build`), runs unprivileged `nextjs` user on port 3000 with `/healthz` healthcheck. |
+| **FastAPI container** | **PASS** | Production container ([Dockerfile.api](Dockerfile.api)) with GEOS, PROJ, and libpq C-libraries; runs Uvicorn ASGI server with `/api/health` healthcheck. |
+| **PostgreSQL container** | **PASS** | `postgis/postgis:17-3.5` on private internal bridge network `pelagic_net`; port 5432 is not exposed publicly; persistent Docker volume `db-data`. |
 | **PostGIS** | **PASS** | PostGIS 3.6 active with GEOS and PROJ extensions; spatial indexing and geo-operations (`ST_GeomFromGeoJSON`, `ST_Area`, `ST_Intersects`) operational. |
-| **Reverse proxy** | **PASS** | Production Nginx proxy ([deploy/nginx/nginx.conf](file:///Users/tusharbhojwani/Downloads/Maritime-main/deploy/nginx/nginx.conf)) routes `/` $\rightarrow$ Next.js and `/api/` $\rightarrow$ FastAPI; preserves SameSite cookies and same-origin semantics; exposes `/healthz`. |
-| **Database initialization** | **PASS** | Deterministic bootstrap via [scripts/bootstrap.py](file:///Users/tusharbhojwani/Downloads/Maritime-main/scripts/bootstrap.py); SHA-256 data manifest verification; strictly non-destructive (no automatic DROP statements). |
-| **Ennore seed** | **PASS** | Canonical incident seeded via [scripts/seed_ennore.py](file:///Users/tusharbhojwani/Downloads/Maritime-main/scripts/seed_ennore.py); idempotent `ON CONFLICT DO NOTHING`; maintains exact 7 cases, 4 observations, 8 tracks without duplicates. |
+| **Reverse proxy** | **PASS** | Production Nginx proxy ([deploy/nginx/nginx.conf](deploy/nginx/nginx.conf)) routes `/` $\rightarrow$ Next.js and `/api/` $\rightarrow$ FastAPI; preserves SameSite cookies and same-origin semantics; exposes `/healthz`. |
+| **Database initialization** | **PASS** | Deterministic bootstrap via [scripts/bootstrap.py](scripts/bootstrap.py); SHA-256 data manifest verification; strictly non-destructive (no automatic DROP statements). |
+| **Ennore seed** | **PASS** | Canonical incident seeded via [scripts/seed_ennore.py](scripts/seed_ennore.py); idempotent `ON CONFLICT DO NOTHING`; maintains exact 7 cases, 4 observations, 8 tracks without duplicates. |
 | **AIS-FIRST data** | **PASS** | Dedicated case `INV-6011ADAF` loaded with 10-step evidence chain, synthetic AIS tracks, and illustrative surface anomaly composite. |
 | **API health** | **PASS** | `GET /api/health` returns HTTP 200 OK with `database: "connected"`, `demo_dataset: "SIH-ENNORE-2017"`, and `external_network_required: false`. |
-| **Frontend health** | **PASS** | `GET /healthz` returns HTTP 200 OK via Next.js route handler ([apps/web/app/healthz/route.ts](file:///Users/tusharbhojwani/Downloads/Maritime-main/apps/web/app/healthz/route.ts)). |
+| **Frontend health** | **PASS** | `GET /healthz` returns HTTP 200 OK via Next.js route handler ([apps/web/app/healthz/route.ts](apps/web/app/healthz/route.ts)). |
 | **AIS-FIRST judge journey** | **PASS** | 11/11 automated checks pass: Landing $\rightarrow$ AIS-FIRST $\rightarrow$ Anomaly Scrubber (07:00 UTC) $\rightarrow$ SAR Reveal (08:15 UTC) $\rightarrow$ High-Priority Candidate badge $\rightarrow$ Evidence Score 76/100 $\rightarrow$ Report Modal. |
 | **SAR-FIRST judge journey** | **PASS** | 17/17 automated checks pass: Landing $\rightarrow$ SAR-FIRST $\rightarrow$ Ennore incident $\rightarrow$ Map layer toggles $\rightarrow$ Candidate Ranking $\rightarrow$ Replay Scrubber $\rightarrow$ Evidence & Uncertainty $\rightarrow$ Report Modal $\rightarrow$ Refresh. |
 | **Browser console** | **PASS** | 0 console errors and 0 console warnings recorded across the entire session by Playwright browser auditor. |
 | **Persistence after restart** | **PASS** | Services stopped and restarted; persistent volume retains all records; health checks recover immediately; case data remains available. |
-| **Secret safety audit** | **PASS** | Zero credentials or tokens committed; regex scanner detected 0 secrets; [.env.example](file:///Users/tusharbhojwani/Downloads/Maritime-main/.env.example) contains safe placeholders only; defensive [.gitignore](file:///Users/tusharbhojwani/Downloads/Maritime-main/.gitignore). |
+| **Secret safety audit** | **PASS** | Zero credentials or tokens committed; regex scanner detected 0 secrets; [.env.example](.env.example) contains safe placeholders only; defensive [.gitignore](.gitignore). |
 | **Developer-machine path dependency** | **PASS** | Zero hardcoded `/Users/` or `Downloads` paths in application code; all assets resolved relative to project root or via public static directories. |
 | **Temporary tunnel dependency** | **PASS** | All temporary tunnels (Cloudflare tunnel) killed; stack operates independently via local or reverse-proxy ports without third-party network tunnels. |
 

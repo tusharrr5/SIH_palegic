@@ -2,7 +2,10 @@ import { chromium } from "playwright";
 import fs from "fs";
 import path from "path";
 
-const ARTIFACTS_DIR = "/Users/tusharbhojwani/.gemini/antigravity-ide/brain/5a66b883-6108-4e17-9c8b-78c769b8e04b";
+const ARTIFACTS_DIR = process.env.ARTIFACTS_DIR || path.resolve("./artifacts");
+if (!fs.existsSync(ARTIFACTS_DIR)) {
+  fs.mkdirSync(ARTIFACTS_DIR, { recursive: true });
+}
 
 async function runSmokeTest() {
   console.log("=== STARTING PALEGIC E2E SMOKE TEST ===");
