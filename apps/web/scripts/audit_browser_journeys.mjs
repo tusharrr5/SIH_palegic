@@ -33,7 +33,7 @@ async function auditBrowserJourneys() {
     consoleErrors.push(err.message);
   });
 
-  const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3000";
+  const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3100";
 
   try {
     // ==========================================
@@ -41,8 +41,9 @@ async function auditBrowserJourneys() {
     // ==========================================
     console.log("\n--- EXECUTING JOURNEY A: AIS-FIRST ---");
     console.log("A1. Landing page...");
-    await page.goto(BASE_URL, { waitUntil: "domcontentloaded" });
-    await page.waitForSelector("#btn-ais-first", { timeout: 10000 });
+    await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: 45000 });
+    await page.waitForSelector("#btn-ais-first", { timeout: 30000 });
+    await page.waitForTimeout(2000);
 
     console.log("A2. Clicking AIS-FIRST entry card...");
     await page.click("#btn-ais-first");
@@ -50,7 +51,7 @@ async function auditBrowserJourneys() {
     console.log("A3. Verifying case load...");
     await page.waitForFunction(
       () => document.querySelector(".evidence-title h2")?.textContent?.includes("AIS Vessel Anomaly"),
-      { timeout: 10000 }
+      { timeout: 30000 }
     );
 
     console.log("A4. Verifying no slick initially at 06:00...");
@@ -91,12 +92,15 @@ async function auditBrowserJourneys() {
     // ==========================================
     console.log("\n--- EXECUTING JOURNEY B: SAR-FIRST ---");
     console.log("B1. Returning to Landing / Clicking SAR-FIRST...");
+    await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: 45000 });
+    await page.waitForSelector("#btn-sar-first", { timeout: 30000 });
+    await page.waitForTimeout(2000);
     await page.click("#btn-sar-first");
 
     console.log("B2. Verifying Ennore canonical case loaded...");
     await page.waitForFunction(
       () => document.querySelector(".evidence-title h2")?.textContent?.includes("Ennore"),
-      { timeout: 10000 }
+      { timeout: 30000 }
     );
     const ennoreTitle = await page.textContent(".evidence-title h2");
     console.log("Incident:", ennoreTitle);

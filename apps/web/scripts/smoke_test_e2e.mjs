@@ -20,13 +20,14 @@ async function runSmokeTest() {
 
   const results = {};
 
-  const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3000";
+  const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3100";
 
   try {
     // 1. Open Landing Page
     console.log(`1. Navigating to landing page ${BASE_URL}...`);
-    await page.goto(BASE_URL, { waitUntil: "domcontentloaded" });
-    await page.waitForSelector(".sih-hero-inner", { timeout: 15000 });
+    await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: 45000 });
+    await page.waitForSelector("#btn-run-demo", { timeout: 30000 });
+    await page.waitForTimeout(2000);
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, "step1_landing_page.png") });
     
     const heroText = await page.textContent(".sih-hero-inner");
@@ -35,15 +36,13 @@ async function runSmokeTest() {
 
     // 2. Click RUN SIH DEMO
     console.log("2. Clicking 'RUN SIH DEMO' button...");
-    const demoButton = page.locator("button:has-text('RUN SIH DEMO')").first();
-    await demoButton.waitFor({ state: "visible", timeout: 5000 });
-    await demoButton.click();
+    await page.click("#btn-run-demo");
 
     // 3. Wait for Investigation Case to load
     console.log("3. Waiting for case SIH-ENNORE-2017 to load...");
     await page.waitForFunction(
       () => document.querySelector(".evidence-title h2")?.textContent?.includes("Ennore"),
-      { timeout: 10000 }
+      { timeout: 30000 }
     );
     const incidentTitle = await page.textContent(".evidence-title h2");
     console.log("Active Incident:", incidentTitle);

@@ -3,6 +3,7 @@ from datetime import datetime, timezone, timedelta
 import json, hashlib, uuid, secrets, os, re
 from argon2.exceptions import VerificationError, InvalidHashError
 from fastapi import FastAPI, Depends, Request, Response, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator, ConfigDict
 from psycopg.errors import UniqueViolation
 from psycopg.types.json import Jsonb
@@ -32,6 +33,19 @@ app = FastAPI(
     version="0.1.0",
     docs_url="/api/docs",
     openapi_url="/api/openapi.json",
+)
+
+allowed_origins_raw = os.getenv("ORIGIN") or os.getenv("APP_ORIGIN") or "http://127.0.0.1:3100,http://localhost:3100"
+allowed_origins = [o.strip() for o in allowed_origins_raw.split(",") if o.strip()]
+allowed_origins.extend(["http://127.0.0.1:3000", "http://localhost:3000", "http://127.0.0.1:3100", "http://localhost:3100"])
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_origin_regex=r"^https://.*\.vercel\.app$",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -279,6 +293,7 @@ def get_case(case_id, public=False):
         return case
 
 
+@app.get("/healthz")
 @app.get("/api/health")
 def health():
     with connection() as conn:

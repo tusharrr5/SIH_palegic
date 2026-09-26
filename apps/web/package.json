@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 -p 3100",
     "build": "next build",
-    "start": "next start -H 0.0.0.0 -p 3000",
+    "start": "next start --hostname 127.0.0.1 -p 3100",
     "typecheck": "tsc --noEmit",
     "prebuild": "node scripts/cache-map-worker.mjs",
     "predev": "node scripts/cache-map-worker.mjs"

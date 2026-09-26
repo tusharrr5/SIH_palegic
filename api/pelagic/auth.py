@@ -14,18 +14,37 @@ ATTEMPTS = defaultdict(deque)
 RATE_LOCK = Lock()
 
 
+SECRET_KEY = os.getenv("SECRET_KEY", "pelagic-dev-secret-key-sih-2026")
+
+
 def require_origin(request: Request):
-    allowed_raw = os.getenv("APP_ORIGIN", "http://127.0.0.1:3100,http://localhost:3100")
+    allowed_raw = os.getenv("ORIGIN") or os.getenv("APP_ORIGIN") or "http://127.0.0.1:3100,http://localhost:3100"
     allowed = {o.strip() for o in allowed_raw.split(",") if o.strip()}
     # Always allow localhost variants in development/testing/reverse-proxy
     allowed.update({"http://127.0.0.1:3000", "http://localhost:3000", "http://127.0.0.1:3100", "http://localhost:3100", "http://localhost", "http://127.0.0.1"})
     origin = request.headers.get("origin")
     if origin:
-        if origin in allowed or origin.endswith(".trycloudflare.com") or origin.endswith(".loca.lt") or origin.endswith(".lhr.life"):
+        if (
+            origin in allowed
+            or origin.endswith(".vercel.app")
+            or origin.endswith(".trycloudflare.com")
+            or origin.endswith(".loca.lt")
+            or origin.endswith(".lhr.life")
+        ):
             return
         raise HTTPException(403, f"Untrusted request origin: {origin}")
     referer = request.headers.get("referer")
-    if referer and any(referer.startswith(a) for a in allowed):
+    if referer and (
+        any(referer.startswith(a) for a in allowed)
+        or ".vercel.app" in referer
+        or ".trycloudflare.com" in referer
+        or ".loca.lt" in referer
+        or ".lhr.life" in referer
+    ):
+        return
+    # If forwarded by Vercel serverless proxy or Render internal router
+    fwd_host = request.headers.get("x-forwarded-host", "")
+    if fwd_host and (fwd_host in allowed or fwd_host.endswith(".vercel.app")):
         return
     # If Origin and Referer are not present (e.g. server-side calls or curl with custom headers), permit if host is local
     client_host = request.client.host if request.client else ""

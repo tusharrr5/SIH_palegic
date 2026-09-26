@@ -18,7 +18,7 @@ async function runAisFirstSmokeTest() {
   });
   const page = await context.newPage();
   const results = {};
-  const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3000";
+  const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:3100";
 
   try {
     // 1. Open Landing Page

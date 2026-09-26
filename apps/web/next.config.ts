@@ -1,4 +1,8 @@
 import type { NextConfig } from "next";
+
+const rawApiUrl = process.env.API_URL || "http://127.0.0.1:8100";
+const apiUrl = rawApiUrl.replace(/\/+$/, "").replace(/\/api$/, "");
+
 const config: NextConfig = {
   poweredByHeader: false,
   outputFileTracingRoot: process.cwd(),
@@ -6,7 +10,7 @@ const config: NextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: `${process.env.API_URL || "http://127.0.0.1:8100"}/api/:path*`,
+        destination: `${apiUrl}/api/:path*`,
       },
     ];
   },

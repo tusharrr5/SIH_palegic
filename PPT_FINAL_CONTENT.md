@@ -118,8 +118,10 @@
 | **Reporting** | 14-section interactive report with PDF export & JSON data download | Automated multi-agency dispatch & digital signature chain of custody |
 
 ### Live Prototype Access
-* **Interactive URL:** `https://pelagic-sih-2026.loca.lt` (or `http://127.0.0.1:3100/?demo=true`)
-* **QR Code Recommendation:** Place QR code in the bottom right corner of this slide linking directly to the live prototype.
+* **Live Prototype:** `https://nam-minds-guardian-seattle.trycloudflare.com/?demo=true`
+* **Demo deployment:** SIH presentation endpoint
+* **Local Fallback:** `http://127.0.0.1:3100/?demo=true`
+* *Note: This active Cloudflare tunnel URL is live for the demonstration session. For persistent multi-day access prior to final PPT submission, refresh from CURRENT_DEMO_URL.txt if tunnel is restarted.*
 * **Credentials:** Instant Authority 1-click access via `RUN SIH DEMO`.
 
 ### Speaker Notes

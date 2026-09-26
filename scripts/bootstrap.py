@@ -25,11 +25,18 @@ def bootstrap(rotate=False):
         if actual != entry["sha256"]:
             raise RuntimeError("Source checksum mismatch: " + entry["file"])
     dsn = os.getenv("DATABASE_URL", "postgresql:///maritime_oil_v2")
+    if dsn.startswith("postgres://"):
+        dsn = dsn.replace("postgres://", "postgresql://", 1)
     params = conninfo_to_dict(dsn)
     dbname = params.get("dbname", "")
-    if not dbname.startswith("maritime_oil_v2"):
+    is_custom_allowed = (
+        os.getenv("ALLOW_CUSTOM_DB", "0") == "1"
+        or ("DATABASE_URL" in os.environ and not dsn.endswith("/maritime_oil_v2"))
+    )
+    if not (dbname.startswith("maritime_oil_v2") or is_custom_allowed):
         raise RuntimeError(
-            "Refusing bootstrap outside a dedicated maritime_oil_v2* database"
+            "Refusing bootstrap outside a dedicated maritime_oil_v2* database. "
+            "To bootstrap an external or cloud database, set DATABASE_URL or ALLOW_CUSTOM_DB=1."
         )
     try:
         with psycopg.connect(
